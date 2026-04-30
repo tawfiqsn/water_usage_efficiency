@@ -19,3 +19,27 @@ https://huggingface.co/datasets/masterlion/WaterEfficientDatasetForAfricanCountr
 In order to understand the deep meaning of the plots and the betters one I used AI.
 Some conclusions are just assumptions of mine.
 
+
+To make this project I used:
+- Python
+- Bash scripting
+- Jupyter Notebook
+- Git
+
+In order to start the project :
+
+- open your terminal
+- run [docker build -t water_usage_efficiency]
+- run [docker run -p 8888:8888 water_usage_efficiency]
+- go on : https://localhost:
+
+Notice that you're going to give permission for running a file called ./setup.sh
+
+Otherwise:
+- run [chmod +x ./setup.sh]
+- run ./setup.sh
+- start jupyter notebook with : jupyter notebook
+- open now notebooks/analysis.ipynb
+
+
+
