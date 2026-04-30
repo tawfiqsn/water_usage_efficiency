@@ -9,8 +9,10 @@ COPY requirement.txt .
 RUN pip install --no-cache-dir -r requirement.txt
 
 RUN pip install jupyter
-
 COPY . .
+
+RUN chmod +x download_data.sh
+RUN ./download_data.sh
 
 EXPOSE 8888
 

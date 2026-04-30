@@ -2,7 +2,7 @@
 
 set -i
 
-echo "Creazione dell'ambiente in corso...."
+echo "Creazione dell'ambiente in corso ...."
 
 python3 -m venv venv
 
@@ -13,10 +13,10 @@ pip install --upgrade pip
 pip install -r requirement.txt
 
 echo "creazione delle directories in corso...."
-mkdir -p data ouput/figures
+mkdir -p ouput/figures
 
-echo "Download del dataset in corso ..."
-curl -sS -L -o data/wue_csv.csv https://huggingface.co/datasets/masterlion/WaterEfficientDatasetForAfricanCountries/resolve/main/Africa_countries_WUE_data.csv
+chmod +x download_data.sh
+./download_data.sh
 
 echo "\n"
 echo "setup completato.."

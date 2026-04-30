@@ -31,7 +31,7 @@ In order to start the project :
 - open your terminal
 - run [docker build -t water_usage_efficiency]
 - run [docker run -p 8888:8888 water_usage_efficiency]
-- go on : https://localhost:
+- go on : http://localhost:8888/lab/workspaces/auto-z/tree/notebooks/analysis.ipynb
 
 Notice that you're going to give permission for running a file called ./setup.sh
 
