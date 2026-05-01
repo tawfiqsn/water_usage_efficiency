@@ -1,4 +1,4 @@
-./data/raw/wue_csv.csv
-./data/raw/wue_csv
-data/raw
+./data/wue_csv.csv
+./data/wue_csv
+data/*
 **/.ipybn_checkpoints/

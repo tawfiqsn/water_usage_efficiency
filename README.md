@@ -28,6 +28,22 @@ Per l'interpretazione delle variabili e dei dati, ho consultato le seguenti font
 - **Version Control:** Git
 - **Containerizzazione:** Docker
 
+## struttura progetto 
+```text
+water_usage_efficiency/
+├── data/                # Cartella per l'archiviazione del dataset (wue_csv.csv)
+├── notebooks/           # Contiene l'analisi dettagliata
+│   └── analysis.ipynb   # Notebook Jupyter con EDA e conclusioni
+├── output/              # Risultati generati dal progetto
+│   └── figures/         # Grafici e visualizzazioni salvate
+├── Dockerfile           # Configurazione dell'immagine Docker
+├── entrypoint.sh        # Script di avvio del container (gestisce download e Jupyter)
+├── download_data.sh     # Script per lo scaricamento automatico del dataset
+├── requirements.txt     # Elenco delle dipendenze Python
+├── setup.sh             # Script per l'installazione e setup locale (venv)
+└── README.md            # Documentazione e guida all'esecuzione
+```
+
 ## Guida all'esecuzione
 
 ### Opzione 1: Docker (Consigliata)
