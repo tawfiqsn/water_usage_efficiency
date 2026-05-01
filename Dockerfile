@@ -5,18 +5,17 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y  build-essential && rm -rf /var/lib/apt/list/*
 
 
-COPY requirement.txt .
-RUN pip install --no-cache-dir -r requirement.txt
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 RUN pip install jupyter
 COPY . .
 
-RUN chmod +x download_data.sh
-RUN ./download_data.sh
+RUN chmod +x *.sh
 
 EXPOSE 8888
 
-CMD ["jupyter","notebook","--ip=0.0.0.0","--port=8888","--no-browser","--allow-root","--NotebookApp.token=''"]
+ENTRYPOINT ["./entrypoint.sh"]
 
 
 

@@ -10,10 +10,10 @@ source venv/bin/activate
 
 echo "installazione delle dipendenze in corso..."
 pip install --upgrade pip
-pip install -r requirement.txt
+pip install -r requirements.txt
 
 echo "creazione delle directories in corso...."
-mkdir -p ouput/figures
+mkdir -p output/figures
 
 chmod +x download_data.sh
 ./download_data.sh
