@@ -1,4 +1,6 @@
-./data/wue_csv.csv
-./data/wue_csv
-data/*
-**/.ipybn_checkpoints/
+data/
+venv/
+**/.ipynb_checkpoints/
+*.pyc
+__pycache__/
+.DS_Store
